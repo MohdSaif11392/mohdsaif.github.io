@@ -1,0 +1,67 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #edf5f6;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    font-family: "Poppins";
+    font-size: 2em;
+}
+/* step */
+
+.music-badge{
+    background-color: #ffffff;
+    
+    display: flex;
+    align-items: center;
+    border-radius: 24px;
+    padding: 12px;
+
+    box-shadow: 0px 0.8px 2.5px -4px rgba(0,0,0,0.035), 0px 6px 20px -4px rgba(0,0,0,0.07);
+}
+.art{
+    height: 128px;
+    width: 128px;
+    position: relative;
+}
+.image{
+    height: 100%;
+    width: 100%;
+    border-radius: 16px;
+}
+.text{
+    width: 320px;
+    margin-left: 24px;
+}
+.artist{
+    color: #000000aa;
+}
+.overlay{
+    position: absolute;
+    inset: 0 0 0 0;
+    border-radius: 8px;
+    background-color: #00000055;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bar{
+    width: 12px;
+    height: 25px;
+    background-color: white;
+    margin: 5px;
+    border-radius: 6px;
+    animation: bar 1400ms infinite;
+}
+.bar:nth-child(even){
+    animation-delay: 700ms;
+}
+@keyframes bar{
+    0%{height: 20px;}
+    50%{height: 48px;}
+    100%{height: 20px;}
+}
